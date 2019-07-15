@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3360ac"
+    tools:context=".Match_detail">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="7dp"
+        app:cardBackgroundColor="#b14261c2"
+        android:layout_gravity="center"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_home"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:stretchColumns="2">
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:text="Team 1 - "
+                    android:textColor="@color/match_detail_input"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/team1Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/match_detail_output"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:text="\nTeam 2 - "
+                    android:textColor="@color/match_detail_input"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/team2Tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:layout_weight="1"
+                    android:textColor="@color/match_detail_output"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:text="\nStatus - "
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_input"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/matchStatusTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_output"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:text="\nScore - "
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_input"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/scoreTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_output"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <!--<TableRow>
+                <TextView
+                    android:text="Description"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"/>
+                <TextView
+                    android:id="@+id/descriptionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+            </TableRow>-->
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:text="\nDate - "
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_input"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/titillium_web_bold"
+                    android:textColor="@color/match_detail_output"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
